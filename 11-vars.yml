@@ -2,9 +2,9 @@
 - name: Variables Demo
   hosts: g1
   become: yes
-   vars:
-   myusernmae: admin
-   
+  vars:
+    myusernmae: admin
+
   tasks:  
   - name: Update static page
     template:
