@@ -3,7 +3,7 @@
   hosts: g1
   become: yes
   vars:
-    myusernmae: Yetty
+    myusername: Yetty
 
   tasks:  
   - name: Update static page
