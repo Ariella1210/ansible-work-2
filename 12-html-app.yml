@@ -5,5 +5,5 @@
 
   roles:
     - apache
-    -html
+    - html
 ...
