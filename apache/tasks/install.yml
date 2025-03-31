@@ -1,0 +1,28 @@
+---
+  - name: Install httpd
+    yum:
+      name: httpd
+      state: present
+    when: ansible_distribution == "Amazon"
+
+  - name: Start and enable httpd service
+    service:
+      name: httpd
+      state: started
+      enabled: yes
+    when: ansible_distribution == "Amazon"
+ 
+  - name: Install Apache2
+    apt:
+      name: apache2
+      state: present
+    when: ansible_distribution == "Ubuntu"
+
+  - name: Start and enable apache2 service
+    service:
+      name: apache2
+      state: started
+      enabled: yes 
+    when: ansible_distribution == "Amazon"
+
+...

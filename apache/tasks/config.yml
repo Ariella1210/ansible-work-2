@@ -1,0 +1,11 @@
+---
+    - name: Update static page
+      copy:
+        src: static.html
+        dest: /var/www/html/static.html
+
+    - name: Update Dynamic page
+      template:
+        src: Dynamic.j2
+        dest: /var/www/html/dynam.html
+...
